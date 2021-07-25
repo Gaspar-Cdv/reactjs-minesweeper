@@ -1,0 +1,23 @@
+@sm : screen and (min-width: 576px);
+@md : screen and (min-width: 768px);
+@lg : screen and (min-width: 992px);
+@xl : screen and (min-width: 1200px);
+@xxl : screen and (min-width: 1400px);
+@font-face {
+  font-family: 'clock';
+  src: url('fonts/clock.ttf');
+}
+@font-face {
+  font-family: 'numbers';
+  src: url('fonts/numbers.ttf');
+}
+#game {
+  background-color: #c0c0c0;
+  width: min-content;
+  padding: 5px;
+  margin: 10px auto;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  user-select: none;
+}

@@ -1,0 +1,46 @@
+@import 'vars.less'; 
+
+#dashboard {
+    display: flex;
+    justify-content: space-between;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @inset;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+#minesLeft, #time {
+    border-width: 1px;
+    border-style: solid;
+    border-color: @inset;
+    background-color: black;
+    color: #ff0000;
+    font-family: 'clock';
+    font-size: 50px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    &::before {
+        position: absolute;
+        content: '888';
+        opacity: 0.3;
+    }
+}
+
+#smiley {
+    height: 37px;
+    width: 37px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: @outset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:active {
+        border-color: @inset;
+    }
+    img {
+        height: 80%;
+    }
+}

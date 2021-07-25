@@ -1,0 +1,19 @@
+@import 'vars.less'; 
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @bg;
+    box-sizing: border-box;
+    border-width: 3px;
+    border-style: solid;
+    border-color: @outset;
+    text-align: center;
+    font-family: 'numbers';
+    font-size: 0.9rem;
+}
+
+.activated {
+    border: 1px solid @dark;
+}

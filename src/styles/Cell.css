@@ -1,0 +1,29 @@
+@sm : screen and (min-width: 576px);
+@md : screen and (min-width: 768px);
+@lg : screen and (min-width: 992px);
+@xl : screen and (min-width: 1200px);
+@xxl : screen and (min-width: 1400px);
+@font-face {
+  font-family: 'clock';
+  src: url('fonts/clock.ttf');
+}
+@font-face {
+  font-family: 'numbers';
+  src: url('fonts/numbers.ttf');
+}
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c0c0c0;
+  box-sizing: border-box;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  text-align: center;
+  font-family: 'numbers';
+  font-size: 0.9rem;
+}
+.activated {
+  border: 1px solid #808080;
+}
